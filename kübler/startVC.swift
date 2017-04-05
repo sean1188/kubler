@@ -15,6 +15,10 @@ class startVC: UIViewController {
 	@IBOutlet weak var logo: UILabel!
 	@IBOutlet weak var bgContainer: UIView!
 	
+	override var prefersStatusBarHidden: Bool{
+		return true
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 		logo.alpha = 0

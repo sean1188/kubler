@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -129,6 +128,7 @@
                             <constraint firstAttribute="trailing" secondItem="eUZ-Dn-ZHp" secondAttribute="trailing" id="ueD-Ox-ijk"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="bgContainer" destination="eUZ-Dn-ZHp" id="V4S-xC-zcT"/>
                         <outlet property="logo" destination="2TL-gi-9I9" id="skB-Wn-ecP"/>
