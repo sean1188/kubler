@@ -112,11 +112,7 @@ class mainMenuBG: UIViewController {
 	
 }
 	
-	
-	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-		moveIntoMenu()
-	}
-	
+
 	
 //MARK: - callables
 	
