@@ -23,7 +23,7 @@ extension  UIView {
 	}
 	
 	func roundifyCircle (){
-		assert(!(self.frame.size.height == self.frame.size.width))
+		assert(self.frame.size.height == self.frame.size.width)
 		self.layer.cornerRadius = self.frame.size.width/2
 	}
 }

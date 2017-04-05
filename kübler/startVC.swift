@@ -8,9 +8,10 @@
 
 import UIKit
 
+	var bgView : mainMenuBG = mainMenuBG()
+
 class startVC: UIViewController {
 
-	var bgView : mainMenuBG = mainMenuBG()
 	var menuView : selectLevelMenu = selectLevelMenu()
 	
 	@IBOutlet weak var playB: UIButton!
@@ -50,7 +51,6 @@ class startVC: UIViewController {
 		}, completion: {(s) in
 			self.presentSelectmenu()
 		})
-		bgView.moveIntoMenu()
 	}
 	
 	func presentSelectmenu () {
@@ -63,6 +63,7 @@ class startVC: UIViewController {
 		UIView .animate(withDuration: 0.4) { 
 			self.menuView.view.alpha = 1
 		}
+		
 	}
 
 }
@@ -74,6 +75,7 @@ class selectLevelMenu : UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		bgView.moveIntoMenu()
 		backB.roundifyCircle()
 		backB.layer.borderWidth = 0.5
 		backB.layer.borderColor = UIColor.white.cgColor
@@ -85,6 +87,10 @@ class selectLevelMenu : UIViewController {
 		}
 	}
 	
+	@IBAction func back(_ sender: Any) {
+		self.view.removeFromSuperview()
+		bgView.exitMenu()
+	}
 	
 }
 

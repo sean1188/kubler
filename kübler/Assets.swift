@@ -49,9 +49,10 @@ class mainMenuBG: UIViewController {
 	
 	var timerr : Timer?
 	
-	var one: CGRect = CGRect(),two: CGRect = CGRect(),three : CGRect = CGRect(),four : CGRect = CGRect()
+	var lineBG: CGRect = CGRect(), one: CGRect = CGRect(),two: CGRect = CGRect(),three : CGRect = CGRect(),four : CGRect = CGRect()
 	
 	override func viewDidLoad() {
+		super.viewDidLoad()
 		imgArray = [bg1, bg2, bg3,bg4]
 		imgArray?.forEach({ (imageview) in
 			imageview?.alpha = 0
@@ -68,6 +69,7 @@ class mainMenuBG: UIViewController {
 		
 	}
 	
+	//stars effect animation
 	func dotSwitcher () {
 		let arr : [CGFloat] = [0.0,0.2,0.4,0.6,0.8,1.0]
 		imgArray?.forEach({ (groupOfDots) in
@@ -130,8 +132,11 @@ class mainMenuBG: UIViewController {
 //MARK: - callables
 	
 	func moveIntoMenu() {
+		//setup for return animation
+		linebg.translatesAutoresizingMaskIntoConstraints = true
+		lineBG = linebg.frame
+		
 		UIView.animate(withDuration: 2, animations: {
-			self.linebg.translatesAutoresizingMaskIntoConstraints = true
 			self.linebg.frame.size = CGSize.init(width: self.linebg.frame.size.width * 1.5, height: self.linebg.frame.size.height * 1.5)
 			self.linebg.transform = CGAffineTransform.init(rotationAngle: 0.6)
 			self.imgArray?.forEach({ (imageView) in
@@ -139,7 +144,16 @@ class mainMenuBG: UIViewController {
 			})
 		})
 		}
-		
+	
+	func exitMenu() {
+		UIView.animate(withDuration: 2, animations: {
+			self.linebg.frame = self.lineBG
+			self.linebg.transform = CGAffineTransform.init(rotationAngle: 0)
+			self.imgArray?.forEach({ (imageView) in
+				imageView?.transform = CGAffineTransform.init(rotationAngle : 0)
+			})
+		})
+	}
 	}
 
 
