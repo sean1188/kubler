@@ -128,7 +128,7 @@ class mainMenuBG: UIViewController {
 			})
 		UIView.animate(withDuration: 2, animations: {
 			self.linebg.translatesAutoresizingMaskIntoConstraints = true
-			self.linebg.transform = CGAffineTransform.init(scaleX: 4, y: 4)
+			self.linebg.frame.size = CGSize.init(width: self.linebg.frame.size.width * 1.5, height: self.linebg.frame.size.height * 1.5)
 			self.linebg.transform = CGAffineTransform.init(rotationAngle: 0.6)
 		})
 		}
