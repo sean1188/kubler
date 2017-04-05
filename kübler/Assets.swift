@@ -130,19 +130,17 @@ class mainMenuBG: UIViewController {
 //MARK: - callables
 	
 	func moveIntoMenu() {
-		UIView.animate(withDuration: 2) {
-			self.imgArray?.forEach({ (imageview) in
-				imageview?.alpha = 0;
-				imageview?.transform = CGAffineTransform.init(rotationAngle: 2)
-			})
 		UIView.animate(withDuration: 2, animations: {
 			self.linebg.translatesAutoresizingMaskIntoConstraints = true
 			self.linebg.frame.size = CGSize.init(width: self.linebg.frame.size.width * 1.5, height: self.linebg.frame.size.height * 1.5)
 			self.linebg.transform = CGAffineTransform.init(rotationAngle: 0.6)
+			self.imgArray?.forEach({ (imageView) in
+				imageView?.transform = CGAffineTransform.init(rotationAngle : 0.6)
+			})
 		})
 		}
 		
 	}
-}
+
 
 
