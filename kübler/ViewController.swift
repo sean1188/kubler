@@ -9,21 +9,51 @@
 import UIKit
 
 var parentHeight : CGFloat? = nil
-class mainMenuBG: UIViewController {
+
+private extension UIView {
+	func displaceView(){
+		let parentheight = parentHeight!
+		self.frame = CGRect.init(x: self.frame.origin.x, y:parentheight
+			, width: self.frame.size.width, height: self.frame.size.height)
+	}
 	
+	
+	func addParallaxToView(amt: Int) {
+		let amount = amt
+		
+		let horizontal = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
+		horizontal.minimumRelativeValue = -amount
+		horizontal.maximumRelativeValue = amount
+		
+		let vertical = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
+		vertical.minimumRelativeValue = -amount
+		vertical.maximumRelativeValue = amount
+		
+		let group = UIMotionEffectGroup()
+		group.motionEffects = [horizontal, vertical]
+		self.addMotionEffect(group)
+	}
+}
+
+
+
+class mainMenuBG: UIViewController {
+//MARK: - INIT
 	@IBOutlet weak var linebg: UIImageView!
 	@IBOutlet weak var bg1: UIImageView!
 	@IBOutlet weak var bg2: UIImageView!
 	@IBOutlet weak var bg3: UIImageView!
 	@IBOutlet weak var bg4: UIImageView!
 	
+	var imgArray : [UIImageView?]? = nil
+	
 	var one: CGRect = CGRect(),two: CGRect = CGRect(),three : CGRect = CGRect(),four : CGRect = CGRect()
 	
 	override func viewDidLoad() {
-		bg1.alpha = 0
-		bg2.alpha = 0
-		bg3.alpha = 0
-		bg4.alpha = 0
+		imgArray = [bg1, bg2, bg3,bg4]
+		imgArray?.forEach({ (imageview) in
+			imageview?.alpha = 0
+		})
 		linebg.alpha = 0;
 		parentHeight = self.view.frame.size.height
 		
@@ -70,41 +100,40 @@ class mainMenuBG: UIViewController {
 		}, completion: nil)
 		UIView.animate(withDuration: 4, delay: 0.5, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.4, options: .curveEaseInOut, animations: {
 			self.bg4.frame = self.four
-			self.bg4.transform = CGAffineTransform.init(rotationAngle: 1 )
+			self.bg4.transform = CGAffineTransform.init(rotationAngle: 0.1 )
 
 		}, completion: nil)
 		//line
-		UIView.animate(withDuration: 4, delay: 7, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
+		UIView.animate(withDuration: 4, delay: 5.5, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
 			self.linebg.alpha = 1
 		},  completion: {(s) in
 	
 		})
 	
 }
+	
+	
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		moveIntoMenu()
+	}
+	
+	
+//MARK: - callables
+	
+	func moveIntoMenu() {
+		UIView.animate(withDuration: 2) {
+			self.imgArray?.forEach({ (imageview) in
+				imageview?.alpha = 0;
+				imageview?.transform = CGAffineTransform.init(rotationAngle: 2)
+			})
+		UIView.animate(withDuration: 2, animations: {
+			self.linebg.translatesAutoresizingMaskIntoConstraints = true
+			self.linebg.transform = CGAffineTransform.init(scaleX: 4, y: 4)
+			self.linebg.transform = CGAffineTransform.init(rotationAngle: 0.6)
+		})
+		}
+		
+	}
 }
 
-private extension UIView {
-	func displaceView(){
-		let parentheight = parentHeight!
-		self.frame = CGRect.init(x: self.frame.origin.x, y:parentheight
-			, width: self.frame.size.width, height: self.frame.size.height)
-	}
-	
-	
-	func addParallaxToView(amt: Int) {
-		let amount = amt
-		
-		let horizontal = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
-		horizontal.minimumRelativeValue = -amount
-		horizontal.maximumRelativeValue = amount
-		
-		let vertical = UIInterpolatingMotionEffect(keyPath: "center.y", type: .tiltAlongVerticalAxis)
-		vertical.minimumRelativeValue = -amount
-		vertical.maximumRelativeValue = amount
-		
-		let group = UIMotionEffectGroup()
-		group.motionEffects = [horizontal, vertical]
-		self.addMotionEffect(group)
-	}
-}
 
