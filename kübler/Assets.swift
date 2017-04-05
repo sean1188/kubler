@@ -47,6 +47,8 @@ class mainMenuBG: UIViewController {
 	
 	var imgArray : [UIImageView?]? = nil
 	
+	var timerr : Timer?
+	
 	var one: CGRect = CGRect(),two: CGRect = CGRect(),three : CGRect = CGRect(),four : CGRect = CGRect()
 	
 	override func viewDidLoad() {
@@ -62,6 +64,17 @@ class mainMenuBG: UIViewController {
 		bg3.addParallaxToView(amt: 35)
 		bg4.addParallaxToView(amt: 5)
 		
+		timerr = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.dotSwitcher), userInfo: nil, repeats: true)
+		
+	}
+	
+	func dotSwitcher () {
+		let arr : [CGFloat] = [0.0,0.2,0.4,0.6,0.8,1.0]
+		imgArray?.forEach({ (groupOfDots) in
+			UIView.animate(withDuration: 0.5, animations: {
+			groupOfDots?.alpha = arr[Int(arc4random()%6)]
+			})
+		})
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
