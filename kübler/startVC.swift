@@ -11,6 +11,8 @@ import UIKit
 class startVC: UIViewController {
 
 	var bgView : mainMenuBG = mainMenuBG()
+	var menuView : selectLevelMenu = selectLevelMenu()
+	
 	@IBOutlet weak var playB: UIButton!
 	@IBOutlet weak var logo: UILabel!
 	@IBOutlet weak var bgContainer: UIView!
@@ -39,23 +41,42 @@ class startVC: UIViewController {
 		}, completion: nil)
 		
 	}
+	
 	@IBAction func play(_ sender: Any) {
 		playB.isEnabled = false
 		UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
 			self.logo.alpha = 0
 			self.playB.alpha = 0
-		}, completion: nil)
+		}, completion: {(s) in
+			self.presentSelectmenu()
+		})
 		bgView.moveIntoMenu()
+	}
+	
+	func presentSelectmenu () {
+		menuView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "menu") as! selectLevelMenu
+		menuView.view.backgroundColor = UIColor.clear
+		self.addChildViewController(menuView)
+		menuView.view.alpha = 0
+		menuView.view.center = self.view.center
+		self.view.addSubview(menuView.view)
+		UIView .animate(withDuration: 0.4) { 
+			self.menuView.view.alpha = 1
+		}
 	}
 
 }
 
 class selectLevelMenu : UIViewController {
 	
+	@IBOutlet weak var backB: UIButton!
 	@IBOutlet var buttonArray: [UIButton]!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		backB.roundifyCircle()
+		backB.layer.borderWidth = 0.5
+		backB.layer.borderColor = UIColor.white.cgColor
 		var count : Double = 0
 		buttonArray.forEach { (button) in
 			button.layer.borderWidth = CGFloat(0.5 + count)

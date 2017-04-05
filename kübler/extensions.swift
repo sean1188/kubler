@@ -21,6 +21,11 @@ extension  UIView {
 	func roundify20 (){
 		self.layer.cornerRadius = 20;
 	}
+	
+	func roundifyCircle (){
+		assert(!(self.frame.size.height == self.frame.size.width))
+		self.layer.cornerRadius = self.frame.size.width/2
+	}
 }
 
 
