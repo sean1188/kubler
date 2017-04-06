@@ -101,16 +101,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kübler." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TL-gi-9I9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kübler." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TL-gi-9I9">
                                 <rect key="frame" x="87" y="119" width="201" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="Q3I-dV-gYs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-CondensedLight" family="American Typewriter" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQd-PT-NEe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQd-PT-NEe">
                                 <rect key="frame" x="87" y="383" width="200" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="fMq-MF-z6p"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AbrilFatface-Regular" family="Abril Fatface" pointSize="25"/>
                                 <state key="normal" title="Play.">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -124,7 +128,13 @@
                         <constraints>
                             <constraint firstItem="eUZ-Dn-ZHp" firstAttribute="leading" secondItem="TyA-In-uT7" secondAttribute="leading" id="5HV-CP-pd3"/>
                             <constraint firstItem="eUZ-Dn-ZHp" firstAttribute="top" secondItem="TyA-In-uT7" secondAttribute="top" id="CYF-OO-1qK"/>
+                            <constraint firstItem="2TL-gi-9I9" firstAttribute="leading" secondItem="TyA-In-uT7" secondAttribute="leadingMargin" constant="71" id="NBn-UN-pqj"/>
+                            <constraint firstItem="2TL-gi-9I9" firstAttribute="leading" secondItem="yQd-PT-NEe" secondAttribute="leading" id="NYc-nU-K6d"/>
+                            <constraint firstItem="pGj-hj-cDM" firstAttribute="top" secondItem="yQd-PT-NEe" secondAttribute="bottom" constant="226" id="Njj-ia-pF7"/>
+                            <constraint firstItem="yQd-PT-NEe" firstAttribute="centerX" secondItem="eUZ-Dn-ZHp" secondAttribute="centerX" id="am1-qF-HDY"/>
                             <constraint firstItem="pGj-hj-cDM" firstAttribute="top" secondItem="eUZ-Dn-ZHp" secondAttribute="bottom" id="fak-cG-Ja9"/>
+                            <constraint firstItem="2TL-gi-9I9" firstAttribute="centerX" secondItem="yQd-PT-NEe" secondAttribute="centerX" id="hx3-UM-QIh"/>
+                            <constraint firstItem="2TL-gi-9I9" firstAttribute="top" secondItem="AlK-vb-2DO" secondAttribute="bottom" constant="119" id="keq-Bp-MTA"/>
                             <constraint firstAttribute="trailing" secondItem="eUZ-Dn-ZHp" secondAttribute="trailing" id="ueD-Ox-ijk"/>
                         </constraints>
                     </view>

@@ -71,10 +71,10 @@ class mainMenuBG: UIViewController {
 	
 	//stars effect animation
 	func dotSwitcher () {
-		let arr : [CGFloat] = [0.0,0.2,0.4,0.6,0.8,1.0]
+		let arr : [CGFloat] = [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
 		imgArray?.forEach({ (groupOfDots) in
 			UIView.animate(withDuration: 0.5, animations: {
-			groupOfDots?.alpha = arr[Int(arc4random()%6)]
+			groupOfDots?.alpha = arr[Int(arc4random()%10)]
 			})
 		})
 	}
@@ -84,6 +84,7 @@ class mainMenuBG: UIViewController {
 		two = bg2.frame
 		three = bg3.frame
 		four = bg4.frame
+		lineBG = linebg.frame
 		animateIn()
 	}
 	
@@ -134,10 +135,9 @@ class mainMenuBG: UIViewController {
 	func moveIntoMenu() {
 		//setup for return animation
 		linebg.translatesAutoresizingMaskIntoConstraints = true
-		lineBG = linebg.frame
 		
 		UIView.animate(withDuration: 2, animations: {
-			self.linebg.frame.size = CGSize.init(width: self.linebg.frame.size.width * 1.5, height: self.linebg.frame.size.height * 1.5)
+			self.linebg.transform = CGAffineTransform.init(scaleX: 1.5, y: 1.5)
 			self.linebg.transform = CGAffineTransform.init(rotationAngle: 0.6)
 			self.imgArray?.forEach({ (imageView) in
 				imageView?.transform = CGAffineTransform.init(rotationAngle : 0.6)
@@ -147,7 +147,7 @@ class mainMenuBG: UIViewController {
 	
 	func exitMenu() {
 		UIView.animate(withDuration: 2, animations: {
-			self.linebg.frame = self.lineBG
+			self.linebg.transform = CGAffineTransform.init(scaleX: 1, y: 1)
 			self.linebg.transform = CGAffineTransform.init(rotationAngle: 0)
 			self.imgArray?.forEach({ (imageView) in
 				imageView?.transform = CGAffineTransform.init(rotationAngle : 0)

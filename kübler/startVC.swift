@@ -55,6 +55,7 @@ class startVC: UIViewController {
 	
 	func presentSelectmenu () {
 		menuView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "menu") as! selectLevelMenu
+		menuView.instanceofStart = self
 		menuView.view.backgroundColor = UIColor.clear
 		self.addChildViewController(menuView)
 		menuView.view.alpha = 0
@@ -65,6 +66,15 @@ class startVC: UIViewController {
 		}
 		
 	}
+	
+	 func callbackMenu (){
+		self.playB.isEnabled = true
+		UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
+			self.logo.alpha = 1
+			self.playB.alpha = 1
+		}, completion: {(s) in
+		})
+	}
 
 }
 
@@ -72,6 +82,8 @@ class selectLevelMenu : UIViewController {
 	
 	@IBOutlet weak var backB: UIButton!
 	@IBOutlet var buttonArray: [UIButton]!
+	
+	var instanceofStart : startVC?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -81,7 +93,7 @@ class selectLevelMenu : UIViewController {
 		backB.layer.borderColor = UIColor.white.cgColor
 		var count : Double = 0
 		buttonArray.forEach { (button) in
-			button.layer.borderWidth = CGFloat(0.5 + count)
+			button.layer.borderWidth = CGFloat(0.1 + count)
 			count = count + 0.1
 			button.layer.borderColor = UIColor.white.cgColor
 		}
@@ -89,6 +101,7 @@ class selectLevelMenu : UIViewController {
 	
 	@IBAction func back(_ sender: Any) {
 		self.view.removeFromSuperview()
+		instanceofStart?.callbackMenu()
 		bgView.exitMenu()
 	}
 	
