@@ -93,7 +93,7 @@ class selectLevelMenu : UIViewController {
 		backB.layer.borderColor = UIColor.white.cgColor
 		var count : Double = 0
 		buttonArray.forEach { (button) in
-			button.layer.borderWidth = CGFloat(0.1 + count)
+			button.layer.borderWidth = CGFloat(0.3 + count)
 			count = count + 0.1
 			button.layer.borderColor = UIColor.white.cgColor
 		}
