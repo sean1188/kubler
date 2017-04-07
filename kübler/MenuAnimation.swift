@@ -120,7 +120,7 @@ class mainMenuBG: UIViewController {
 
 		}, completion: nil)
 		//line
-		UIView.animate(withDuration: 4, delay: 5.5, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
+		UIView.animate(withDuration: 4, delay: 4.5, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
 			self.linebg.alpha = 1
 		},  completion: nil)
 	
@@ -136,7 +136,7 @@ class mainMenuBG: UIViewController {
 		linebg.translatesAutoresizingMaskIntoConstraints = true
 		
 		UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
-			self.linebg.transform = CGAffineTransform.init(scaleX: 1.8, y: 1.8)
+			self.linebg.transform = CGAffineTransform.init(scaleX: 2, y: 2)
 			self.linebg.transform = CGAffineTransform.init(rotationAngle: 0.6)
 			self.imgArray?.forEach({ (imageView) in
 				imageView?.transform = CGAffineTransform.init(rotationAngle : 0.6)

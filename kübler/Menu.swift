@@ -29,7 +29,7 @@ class startVC: UIViewController {
 		
 		playB.layer.borderWidth = 0.5
 		playB.layer.borderColor = UIColor.white.cgColor
-		playB.roundify15()
+//		playB.roundify15()
 		
 		bgView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "menuBG") as! mainMenuBG
 		self.addChildViewController(bgView)
@@ -61,7 +61,7 @@ class startVC: UIViewController {
 		menuView.view.alpha = 0
 		menuView.view.center = self.view.center
 		self.view.addSubview(menuView.view)
-		UIView .animate(withDuration: 0.4) { 
+		UIView .animate(withDuration: 0.3) {
 			self.menuView.view.alpha = 1
 		}
 		
