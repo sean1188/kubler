@@ -431,7 +431,7 @@
 				INFOPLIST_FILE = "kübler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kaele.ku-bler";
+				PRODUCT_BUNDLE_IDENTIFIER = "covve.ku-bler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -445,7 +445,7 @@
 				INFOPLIST_FILE = "kübler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kaele.ku-bler";
+				PRODUCT_BUNDLE_IDENTIFIER = "covve.ku-bler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

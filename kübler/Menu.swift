@@ -3,7 +3,7 @@
 //  kübler
 //
 //  Created by Seannn! on 5/4/17.
-//  Copyright © 2017 kæle. All rights reserved.
+//  Copyright © 2017 covve. All rights reserved.
 //
 
 import UIKit
@@ -94,7 +94,7 @@ class selectLevelMenu : UIViewController {
 			button.tag = cosunt
 			cosunt = cosunt + 1
 		}
-		bgView.moveIntoMenu()
+		bgView.movetoRandPosition()
 		backB.roundifyCircle()
 		backB.layer.borderWidth = 0.5
 		backB.layer.borderColor = UIColor.white.cgColor

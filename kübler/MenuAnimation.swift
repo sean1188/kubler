@@ -3,7 +3,7 @@
 //  kübler
 //
 //  Created by Seannn! on 30/3/17.
-//  Copyright © 2017 kæle. All rights reserved.
+//  Copyright © 2017 covve. All rights reserved.
 //
 
 import UIKit
@@ -129,20 +129,6 @@ class mainMenuBG: UIViewController {
 
 	
 //MARK: - callables
-	
-	func moveIntoMenu() {
-		
-		//setup for return animation
-		linebg.translatesAutoresizingMaskIntoConstraints = true
-		
-		UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
-			self.linebg.transform = CGAffineTransform.init(scaleX: 2, y: 2)
-			self.linebg.transform = CGAffineTransform.init(rotationAngle: 0.8)
-			self.imgArray?.forEach({ (imageView) in
-				imageView?.transform = CGAffineTransform.init(rotationAngle : 1)
-			})
-		})
-		}
 	
 	func exitMenu() {
 		UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {

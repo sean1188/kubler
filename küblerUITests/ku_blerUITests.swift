@@ -3,7 +3,7 @@
 //  küblerUITests
 //
 //  Created by Seannn! on 30/3/17.
-//  Copyright © 2017 kæle. All rights reserved.
+//  Copyright © 2017 covve. All rights reserved.
 //
 
 import XCTest
