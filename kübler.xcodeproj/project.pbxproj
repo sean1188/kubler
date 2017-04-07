@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		540873BC1E97731C0005A5D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540873BB1E97731C0005A5D3 /* ViewController.swift */; };
 		54341F241E954F09001747B5 /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54EDDF751E9503E400169741 /* AbrilFatface-Regular.ttf */; };
 		5448FE761E9376EA00B22D9E /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448FE751E9376EA00B22D9E /* extensions.swift */; };
 		54521F4B1E94EF5500656511 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54521F4A1E94EF5500656511 /* Menu.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		540873BB1E97731C0005A5D3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5448FE751E9376EA00B22D9E /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		54521F4A1E94EF5500656511 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		54DFE7C41E8D59FA00C5AE28 /* kübler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kübler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				54DFE7D31E8D59FA00C5AE28 /* Info.plist */,
 				5448FE751E9376EA00B22D9E /* extensions.swift */,
 				54521F4A1E94EF5500656511 /* Menu.swift */,
+				540873BB1E97731C0005A5D3 /* ViewController.swift */,
 			);
 			path = "kübler";
 			sourceTree = "<group>";
@@ -198,7 +201,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "kæle";
+				ORGANIZATIONNAME = covve.;
 				TargetAttributes = {
 					54DFE7C31E8D59FA00C5AE28 = {
 						CreatedOnToolsVersion = 8.3;
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540873BC1E97731C0005A5D3 /* ViewController.swift in Sources */,
 				54DFE7CA1E8D59FA00C5AE28 /* MenuAnimation.swift in Sources */,
 				54DFE7C81E8D59FA00C5AE28 /* AppDelegate.swift in Sources */,
 				5448FE761E9376EA00B22D9E /* extensions.swift in Sources */,
