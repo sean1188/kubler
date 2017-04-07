@@ -153,7 +153,24 @@ class mainMenuBG: UIViewController {
 			})
 		})
 	}
+	
+	func movetoRandPosition() {
+		UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
+			let arr : [CGFloat] = [0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0]
+			self.linebg.transform = CGAffineTransform.init(scaleX: 2, y: 2)
+			self.linebg.transform = CGAffineTransform.init(rotationAngle: arr[Int(arc4random()%10)])
+			self.imgArray?.forEach({ (imageView) in
+				imageView?.transform = CGAffineTransform.init(rotationAngle : arr[Int(arc4random()%10)])
+			})
+		})
 	}
+
+
+
+
+
+}
+
 
 
 

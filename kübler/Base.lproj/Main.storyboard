@@ -184,6 +184,9 @@
                                         <state key="normal" title="I">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="menuButtonPressed:" destination="vu8-Ff-Pqz" eventType="touchUpInside" id="sGF-Z1-LTn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niN-uC-Of2">
                                         <rect key="frame" x="52" y="112" width="208" height="77.5"/>
@@ -191,6 +194,9 @@
                                         <state key="normal" title="II">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="menuButtonPressed:" destination="vu8-Ff-Pqz" eventType="touchUpInside" id="FNt-sc-SHW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKz-6c-55l">
                                         <rect key="frame" x="52" y="203.5" width="208" height="77"/>
@@ -198,6 +204,9 @@
                                         <state key="normal" title="III">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="menuButtonPressed:" destination="vu8-Ff-Pqz" eventType="touchUpInside" id="00V-Wu-Cdj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwf-fd-44p">
                                         <rect key="frame" x="52" y="294.5" width="208" height="77.5"/>
@@ -205,6 +214,9 @@
                                         <state key="normal" title="IV">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="menuButtonPressed:" destination="vu8-Ff-Pqz" eventType="touchUpInside" id="XM2-hv-FD2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ace-qL-MQz">
                                         <rect key="frame" x="52" y="386" width="208" height="77"/>
@@ -212,6 +224,9 @@
                                         <state key="normal" title="V.">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="menuButtonPressed:" destination="vu8-Ff-Pqz" eventType="touchUpInside" id="eMd-Ao-yyr"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

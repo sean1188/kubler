@@ -83,10 +83,17 @@ class selectLevelMenu : UIViewController {
 	@IBOutlet weak var backB: UIButton!
 	@IBOutlet var buttonArray: [UIButton]!
 	
+	
+	
 	var instanceofStart : startVC?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		var cosunt = 0
+		buttonArray.forEach { (button) in
+			button.tag = cosunt
+			cosunt = cosunt + 1
+		}
 		bgView.moveIntoMenu()
 		backB.roundifyCircle()
 		backB.layer.borderWidth = 0.5
@@ -104,6 +111,17 @@ class selectLevelMenu : UIViewController {
 		instanceofStart?.callbackMenu()
 		bgView.exitMenu()
 	}
+	
+	@IBAction func menuButtonPressed(_ sender: UIButton) {
+		bgView.movetoRandPosition()
+		switch sender.tag {
+			case 0:
+				break
+			default:
+				break
+		}
+	}
+	
 	
 }
 
