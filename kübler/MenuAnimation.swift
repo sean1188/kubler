@@ -11,6 +11,7 @@ import UIKit
 var parentHeight : CGFloat? = nil
 
 private extension UIView {
+    
 	func displaceView(){
 		let parentheight = parentHeight!
 		self.frame = CGRect.init(x: self.frame.origin.x, y:parentheight
