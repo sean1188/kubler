@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		540873BC1E97731C0005A5D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540873BB1E97731C0005A5D3 /* ViewController.swift */; };
 		54341F241E954F09001747B5 /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54EDDF751E9503E400169741 /* AbrilFatface-Regular.ttf */; };
 		5448FE761E9376EA00B22D9E /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448FE751E9376EA00B22D9E /* extensions.swift */; };
 		54521F4B1E94EF5500656511 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54521F4A1E94EF5500656511 /* Menu.swift */; };
 		54DFE7C81E8D59FA00C5AE28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFE7C71E8D59FA00C5AE28 /* AppDelegate.swift */; };
-		54DFE7CA1E8D59FA00C5AE28 /* MenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFE7C91E8D59FA00C5AE28 /* MenuAnimation.swift */; };
+		54DFE7CA1E8D59FA00C5AE28 /* MenuBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFE7C91E8D59FA00C5AE28 /* MenuBackground.swift */; };
 		54DFE7CD1E8D59FA00C5AE28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DFE7CB1E8D59FA00C5AE28 /* Main.storyboard */; };
 		54DFE7CF1E8D59FA00C5AE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DFE7CE1E8D59FA00C5AE28 /* Assets.xcassets */; };
 		54DFE7D21E8D59FA00C5AE28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DFE7D01E8D59FA00C5AE28 /* LaunchScreen.storyboard */; };
@@ -38,12 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		540873BB1E97731C0005A5D3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5448FE751E9376EA00B22D9E /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		54521F4A1E94EF5500656511 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		54DFE7C41E8D59FA00C5AE28 /* kübler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kübler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DFE7C71E8D59FA00C5AE28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54DFE7C91E8D59FA00C5AE28 /* MenuAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAnimation.swift; sourceTree = "<group>"; };
+		54DFE7C91E8D59FA00C5AE28 /* MenuBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBackground.swift; sourceTree = "<group>"; };
 		54DFE7CC1E8D59FA00C5AE28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54DFE7CE1E8D59FA00C5AE28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54DFE7D11E8D59FA00C5AE28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,14 +105,13 @@
 			children = (
 				54EDDF751E9503E400169741 /* AbrilFatface-Regular.ttf */,
 				54DFE7C71E8D59FA00C5AE28 /* AppDelegate.swift */,
-				54DFE7C91E8D59FA00C5AE28 /* MenuAnimation.swift */,
+				54DFE7C91E8D59FA00C5AE28 /* MenuBackground.swift */,
 				54DFE7CB1E8D59FA00C5AE28 /* Main.storyboard */,
 				54DFE7CE1E8D59FA00C5AE28 /* Assets.xcassets */,
 				54DFE7D01E8D59FA00C5AE28 /* LaunchScreen.storyboard */,
 				54DFE7D31E8D59FA00C5AE28 /* Info.plist */,
 				5448FE751E9376EA00B22D9E /* extensions.swift */,
 				54521F4A1E94EF5500656511 /* Menu.swift */,
-				540873BB1E97731C0005A5D3 /* ViewController.swift */,
 			);
 			path = "kübler";
 			sourceTree = "<group>";
@@ -275,8 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540873BC1E97731C0005A5D3 /* ViewController.swift in Sources */,
-				54DFE7CA1E8D59FA00C5AE28 /* MenuAnimation.swift in Sources */,
+				54DFE7CA1E8D59FA00C5AE28 /* MenuBackground.swift in Sources */,
 				54DFE7C81E8D59FA00C5AE28 /* AppDelegate.swift in Sources */,
 				5448FE761E9376EA00B22D9E /* extensions.swift in Sources */,
 				54521F4B1E94EF5500656511 /* Menu.swift in Sources */,
