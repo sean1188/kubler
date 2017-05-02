@@ -89,10 +89,10 @@ class selectLevelMenu : UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		var cosunt = 0
+		var countt = 0
 		buttonArray.forEach { (button) in
-			button.tag = cosunt
-			cosunt = cosunt + 1
+			button.tag = countt
+			countt = countt + 1
 		}
 		bgView.movetoRandPosition()
 		backB.roundifyCircle()
@@ -124,6 +124,7 @@ class selectLevelMenu : UIViewController {
 	
 	
 }
+
 
 
 
