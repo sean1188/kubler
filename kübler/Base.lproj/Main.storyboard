@@ -123,6 +123,16 @@
                                     <action selector="play:" destination="Q7M-Fl-AXn" eventType="touchUpInside" id="hlR-GO-57h"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9W-FO-uCt">
+                                <rect key="frame" x="174.5" y="625" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="lLh-JS-CDw"/>
+                                    <constraint firstAttribute="height" constant="26" id="zVY-6d-yAg"/>
+                                </constraints>
+                                <state key="normal" image="Asset 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -135,12 +145,15 @@
                             <constraint firstItem="pGj-hj-cDM" firstAttribute="top" secondItem="eUZ-Dn-ZHp" secondAttribute="bottom" id="fak-cG-Ja9"/>
                             <constraint firstItem="2TL-gi-9I9" firstAttribute="centerX" secondItem="yQd-PT-NEe" secondAttribute="centerX" id="hx3-UM-QIh"/>
                             <constraint firstItem="2TL-gi-9I9" firstAttribute="top" secondItem="AlK-vb-2DO" secondAttribute="bottom" constant="119" id="keq-Bp-MTA"/>
+                            <constraint firstItem="t9W-FO-uCt" firstAttribute="centerX" secondItem="TyA-In-uT7" secondAttribute="centerX" id="lkz-On-Rl3"/>
+                            <constraint firstItem="pGj-hj-cDM" firstAttribute="top" secondItem="t9W-FO-uCt" secondAttribute="bottom" constant="16" id="nfM-Wq-xig"/>
                             <constraint firstAttribute="trailing" secondItem="eUZ-Dn-ZHp" secondAttribute="trailing" id="ueD-Ox-ijk"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="bgContainer" destination="eUZ-Dn-ZHp" id="V4S-xC-zcT"/>
+                        <outlet property="covveLogo" destination="t9W-FO-uCt" id="nNq-7f-qzt"/>
                         <outlet property="logo" destination="2TL-gi-9I9" id="skB-Wn-ecP"/>
                         <outlet property="playB" destination="yQd-PT-NEe" id="sro-ln-Q17"/>
                     </connections>
@@ -277,10 +290,10 @@
             </objects>
             <point key="canvasLocation" x="828" y="874.81259370314854"/>
         </scene>
-        <!--View Controller-->
+        <!--Preface-->
         <scene sceneID="Lth-Gf-AvW">
             <objects>
-                <viewController id="obu-qC-jNb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="preface" id="obu-qC-jNb" customClass="preface" customModule="ku_bler" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C8I-yH-7iM"/>
                         <viewControllerLayoutGuide type="bottom" id="ohH-9R-Hfl"/>
@@ -314,6 +327,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="ContentText" destination="M5w-wc-eNJ" id="w3w-My-98k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="quv-Hz-vhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,6 +337,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Asset 1" width="450" height="450"/>
         <image name="dotsbg-1" width="291" height="603"/>
         <image name="dotsbg-2" width="316" height="496"/>
         <image name="dotsbg-3" width="327" height="559"/>
