@@ -25,13 +25,19 @@ class startVC: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+// ---------- init menu
+        
 		logo.alpha = 0
 		playB.alpha = 0
         covveLogo.alpha = 0
 		
-		playB.layer.borderWidth = 0.5
+		playB.layer.borderWidth = 0.35
+        playB.roundify10()
 		playB.layer.borderColor = UIColor.white.cgColor
 		
+// ---------- background instance init
+
 		bgView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "menuBG") as! mainMenuBG
 		self.addChildViewController(bgView)
 		bgView.view.center = self.bgContainer.center

@@ -20,6 +20,8 @@
 		54DFE7E81E8D59FA00C5AE28 /* ku_blerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFE7E71E8D59FA00C5AE28 /* ku_blerUITests.swift */; };
 		972DFCB21EDDCACC00A61EF4 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DFCB11EDDCACC00A61EF4 /* GameVC.swift */; };
 		9782D343FC2D48C0479C0E41 /* Pods_ku_blerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D5223F236B35414F611092 /* Pods_ku_blerUITests.framework */; };
+		97A893241EF62F7400736631 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97A893211EF62F0F00736631 /* fontawesome-webfont.ttf */; };
+		97A893251EF62F7400736631 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97A893221EF62F0F00736631 /* FontAwesome.otf */; };
 		BF6EBD9D060AF4BE55E2E445 /* Pods_ku_blerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B86FFEA8422FFA932F66B94 /* Pods_ku_blerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		7B86FFEA8422FFA932F66B94 /* Pods_ku_blerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ku_blerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5807C7DE67BA93C4EF231D /* Pods-kübler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kübler.release.xcconfig"; path = "Pods/Target Support Files/Pods-kübler/Pods-kübler.release.xcconfig"; sourceTree = "<group>"; };
 		972DFCB11EDDCACC00A61EF4 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		97A893211EF62F0F00736631 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		97A893221EF62F0F00736631 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		97D5223F236B35414F611092 /* Pods_ku_blerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ku_blerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF194D793087760D87D1C07F /* Pods-kübler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kübler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kübler/Pods-kübler.debug.xcconfig"; sourceTree = "<group>"; };
 		B69A2ED53469F6970E068B83 /* Pods-küblerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-küblerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-küblerTests/Pods-küblerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +126,7 @@
 		54DFE7C61E8D59FA00C5AE28 /* kübler */ = {
 			isa = PBXGroup;
 			children = (
-				54EDDF751E9503E400169741 /* AbrilFatface-Regular.ttf */,
+				97A893231EF62F1300736631 /* Fonts */,
 				54DFE7C71E8D59FA00C5AE28 /* AppDelegate.swift */,
 				54DFE7C91E8D59FA00C5AE28 /* MenuBackground.swift */,
 				54DFE7CB1E8D59FA00C5AE28 /* Main.storyboard */,
@@ -152,6 +156,16 @@
 				54DFE7E91E8D59FA00C5AE28 /* Info.plist */,
 			);
 			path = "küblerUITests";
+			sourceTree = "<group>";
+		};
+		97A893231EF62F1300736631 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				97A893211EF62F0F00736631 /* fontawesome-webfont.ttf */,
+				97A893221EF62F0F00736631 /* FontAwesome.otf */,
+				54EDDF751E9503E400169741 /* AbrilFatface-Regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		EB48748AF83233FD9F38CEC0 /* Frameworks */ = {
@@ -296,6 +310,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A893241EF62F7400736631 /* fontawesome-webfont.ttf in Resources */,
+				97A893251EF62F7400736631 /* FontAwesome.otf in Resources */,
 				54341F241E954F09001747B5 /* AbrilFatface-Regular.ttf in Resources */,
 				54DFE7D21E8D59FA00C5AE28 /* LaunchScreen.storyboard in Resources */,
 				54DFE7CF1E8D59FA00C5AE28 /* Assets.xcassets in Resources */,

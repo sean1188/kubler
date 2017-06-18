@@ -6,11 +6,15 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="AbrilFatface-Regular.ttf">
             <string>AbrilFatface-Regular</string>
+        </array>
+        <array key="fontawesome-webfont.ttf">
+            <string>FontAwesome</string>
         </array>
     </customFonts>
     <scenes>
@@ -101,8 +105,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Küblęr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2TL-gi-9I9">
-                                <rect key="frame" x="101.5" y="119" width="173" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="küblęr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2TL-gi-9I9">
+                                <rect key="frame" x="102" y="119" width="173" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Q3I-dV-gYs"/>
                                 </constraints>
@@ -111,12 +115,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQd-PT-NEe">
-                                <rect key="frame" x="101.5" y="383" width="171.5" height="58"/>
+                                <rect key="frame" x="131.5" y="386" width="112.5" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="fMq-MF-z6p"/>
+                                    <constraint firstAttribute="height" constant="55" id="fMq-MF-z6p"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AbrilFatface-Regular" family="Abril Fatface" pointSize="25"/>
-                                <state key="normal" title="Play.">
+                                <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="26"/>
+                                <state key="normal" title="">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -139,9 +143,9 @@
                             <constraint firstItem="eUZ-Dn-ZHp" firstAttribute="leading" secondItem="TyA-In-uT7" secondAttribute="leading" id="5HV-CP-pd3"/>
                             <constraint firstItem="eUZ-Dn-ZHp" firstAttribute="top" secondItem="TyA-In-uT7" secondAttribute="top" id="CYF-OO-1qK"/>
                             <constraint firstItem="2TL-gi-9I9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TyA-In-uT7" secondAttribute="leadingMargin" constant="71" id="NBn-UN-pqj"/>
-                            <constraint firstItem="2TL-gi-9I9" firstAttribute="leading" secondItem="yQd-PT-NEe" secondAttribute="leading" id="NYc-nU-K6d"/>
                             <constraint firstItem="pGj-hj-cDM" firstAttribute="top" secondItem="yQd-PT-NEe" secondAttribute="bottom" constant="226" id="Njj-ia-pF7"/>
                             <constraint firstItem="yQd-PT-NEe" firstAttribute="centerX" secondItem="eUZ-Dn-ZHp" secondAttribute="centerX" id="am1-qF-HDY"/>
+                            <constraint firstItem="yQd-PT-NEe" firstAttribute="width" secondItem="eUZ-Dn-ZHp" secondAttribute="width" multiplier="0.3" id="d4R-K4-VRi"/>
                             <constraint firstItem="pGj-hj-cDM" firstAttribute="top" secondItem="eUZ-Dn-ZHp" secondAttribute="bottom" id="fak-cG-Ja9"/>
                             <constraint firstItem="2TL-gi-9I9" firstAttribute="centerX" secondItem="yQd-PT-NEe" secondAttribute="centerX" id="hx3-UM-QIh"/>
                             <constraint firstItem="2TL-gi-9I9" firstAttribute="top" secondItem="AlK-vb-2DO" secondAttribute="bottom" constant="119" id="keq-Bp-MTA"/>
@@ -302,26 +306,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ift-fI-Xui">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ift-fI-Xui">
                                 <rect key="frame" x="120" y="56" width="134" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AbrilFatface-Regular" family="Abril Fatface" pointSize="48"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Denial" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r81-MM-J62">
-                                <rect key="frame" x="100" y="103" width="174" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5w-wc-eNJ">
                                 <rect key="frame" x="53" y="169" width="269" height="424"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Hey! Thats pretty good!Hey! Thats pretty good!Hey! Thats pretty good!Hey! Thats pretty good!Hey! Thats pretty good!Hey! Thats pretty good!Hey! Thats pretty good!Hey! Thats pretty good!Hey! Thats pretty good!</string>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
+                                <string key="text">The most beautiful people we have known  are those who have known defeat, known suffering, known struggle, known loss, and have found their way out of the depths.</string>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="22"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Denial" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r81-MM-J62">
+                                <rect key="frame" x="95" y="109" width="185" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
