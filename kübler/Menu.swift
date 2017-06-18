@@ -88,6 +88,7 @@ class startVC: UIViewController {
 
 }
 
+
 class selectLevelMenu : UIViewController {
 	
 	@IBOutlet weak var backB: UIButton!
@@ -100,8 +101,8 @@ class selectLevelMenu : UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		var countt = 0
-		buttonArray.forEach { (button) in
-			button.tag = countt
+		buttonArray.forEach {
+			$0.tag = countt
 			countt = countt + 1
 		}
 		bgView.movetoRandPosition()
@@ -110,6 +111,7 @@ class selectLevelMenu : UIViewController {
 		backB.layer.borderColor = UIColor.white.cgColor
 		var count : Double = 0
 		buttonArray.forEach { (button) in
+            button.roundify15()
 			button.layer.borderWidth = CGFloat(0.3 + count)
 			count = count + 0.1
 			button.layer.borderColor = UIColor.white.cgColor
@@ -147,12 +149,37 @@ class selectLevelMenu : UIViewController {
 
 class preface : UIViewController {
     
-    var chapter: Int? = nil
+    @IBOutlet weak var chapterIndicator: UILabel!
     @IBOutlet weak var ContentText: UILabel!
+    @IBOutlet weak var chapterTitle: UILabel!
+    
+    var chapter: Int? = nil
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        animateIn()
+    }
+    
+// ---------- Animations
+    
+    func animateIn() {
         
+        chapterTitle.alpha = 0
+        ContentText.alpha = 0
+        chapterIndicator.alpha = 0
+        
+        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut, animations: {
+            self.chapterIndicator.alpha = 1
+        }) { (i) in
+            UIView.animate(withDuration: 0.8, delay: 1, options: .curveEaseInOut, animations: {
+                self.chapterTitle.alpha = 1
+            }, completion: { (i) in
+                UIView.animate(withDuration: 1.3, delay: 1, options: .curveEaseInOut, animations: {
+                    self.ContentText.alpha = 1
+                }, completion: nil)
+            })
+        }
     }
     
 }

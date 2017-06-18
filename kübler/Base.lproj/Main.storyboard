@@ -333,6 +333,8 @@
                     </view>
                     <connections>
                         <outlet property="ContentText" destination="M5w-wc-eNJ" id="w3w-My-98k"/>
+                        <outlet property="chapterIndicator" destination="ift-fI-Xui" id="jFS-hq-nh3"/>
+                        <outlet property="chapterTitle" destination="r81-MM-J62" id="X0c-b5-7H7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="quv-Hz-vhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
