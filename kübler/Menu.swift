@@ -131,7 +131,7 @@ class selectLevelMenu : UIViewController {
         self.view.addSubview(prefaceView.view)
         UIView.animate(withDuration: 0.5) {
             self.backB.alpha = 0;
-            _ = self.buttonArray.map{$0.alpha = 0}
+            self.buttonArray.forEach{$0.alpha = 0}
             self.prefaceView.view.alpha = 1
         }
     }
@@ -150,19 +150,6 @@ class preface : UIViewController {
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

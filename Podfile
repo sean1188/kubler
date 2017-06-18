@@ -7,7 +7,7 @@ target 'kübler' do
 
   # Pods for kübler
   pod 'IQKeyboardManager'
-
+  pod 'Bayes', git: 'https://github.com/fcanas/Bayes.git'
   target 'küblerTests' do
     inherit! :search_paths
     # Pods for testing

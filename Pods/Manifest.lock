@@ -1,12 +1,24 @@
 PODS:
+  - Bayes (0.0.1)
   - IQKeyboardManager (4.0.9)
 
 DEPENDENCIES:
+  - Bayes (from `https://github.com/fcanas/Bayes.git`)
   - IQKeyboardManager
 
+EXTERNAL SOURCES:
+  Bayes:
+    :git: https://github.com/fcanas/Bayes.git
+
+CHECKOUT OPTIONS:
+  Bayes:
+    :commit: bbf8d56a6b0f4bb963ef5aaf5c8ee954135141c1
+    :git: https://github.com/fcanas/Bayes.git
+
 SPEC CHECKSUMS:
+  Bayes: 7b436c0045de7d9e5e60bd37cf85c65a6ac82837
   IQKeyboardManager: 322c7405df3eb5f7e50dede32ea937bf3d4364e0
 
-PODFILE CHECKSUM: 2ca0953e44f8ec22262f0ec813f93866284ea825
+PODFILE CHECKSUM: b0f281a5eec4c7c8e850d69205857e0f15e1c095
 
 COCOAPODS: 1.2.1

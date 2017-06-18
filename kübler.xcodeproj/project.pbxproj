@@ -18,6 +18,7 @@
 		54DFE7D21E8D59FA00C5AE28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DFE7D01E8D59FA00C5AE28 /* LaunchScreen.storyboard */; };
 		54DFE7DD1E8D59FA00C5AE28 /* ku_blerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFE7DC1E8D59FA00C5AE28 /* ku_blerTests.swift */; };
 		54DFE7E81E8D59FA00C5AE28 /* ku_blerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DFE7E71E8D59FA00C5AE28 /* ku_blerUITests.swift */; };
+		972DFCB21EDDCACC00A61EF4 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972DFCB11EDDCACC00A61EF4 /* GameVC.swift */; };
 		9782D343FC2D48C0479C0E41 /* Pods_ku_blerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D5223F236B35414F611092 /* Pods_ku_blerUITests.framework */; };
 		BF6EBD9D060AF4BE55E2E445 /* Pods_ku_blerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B86FFEA8422FFA932F66B94 /* Pods_ku_blerTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		54EDDF751E9503E400169741 /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
 		7B86FFEA8422FFA932F66B94 /* Pods_ku_blerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ku_blerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5807C7DE67BA93C4EF231D /* Pods-kübler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kübler.release.xcconfig"; path = "Pods/Target Support Files/Pods-kübler/Pods-kübler.release.xcconfig"; sourceTree = "<group>"; };
+		972DFCB11EDDCACC00A61EF4 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		97D5223F236B35414F611092 /* Pods_ku_blerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ku_blerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF194D793087760D87D1C07F /* Pods-kübler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kübler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kübler/Pods-kübler.debug.xcconfig"; sourceTree = "<group>"; };
 		B69A2ED53469F6970E068B83 /* Pods-küblerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-küblerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-küblerTests/Pods-küblerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				54DFE7D31E8D59FA00C5AE28 /* Info.plist */,
 				5448FE751E9376EA00B22D9E /* extensions.swift */,
 				54521F4A1E94EF5500656511 /* Menu.swift */,
+				972DFCB11EDDCACC00A61EF4 /* GameVC.swift */,
 			);
 			path = "kübler";
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				54DFE7CA1E8D59FA00C5AE28 /* MenuBackground.swift in Sources */,
 				54DFE7C81E8D59FA00C5AE28 /* AppDelegate.swift in Sources */,
 				5448FE761E9376EA00B22D9E /* extensions.swift in Sources */,
+				972DFCB21EDDCACC00A61EF4 /* GameVC.swift in Sources */,
 				54521F4B1E94EF5500656511 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

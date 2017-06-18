@@ -55,9 +55,7 @@ class mainMenuBG: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		imgArray = [bg1, bg2, bg3,bg4]
-		imgArray?.forEach({ (imageview) in
-			imageview?.alpha = 0
-		})
+        imgArray?.forEach{$0?.alpha = 0}
 		linebg.alpha = 0;
 		parentHeight = self.view.frame.size.height
 		
