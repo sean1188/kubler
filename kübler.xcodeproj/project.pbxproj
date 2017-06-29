@@ -22,6 +22,7 @@
 		9782D343FC2D48C0479C0E41 /* Pods_ku_blerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D5223F236B35414F611092 /* Pods_ku_blerUITests.framework */; };
 		97A893241EF62F7400736631 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97A893211EF62F0F00736631 /* fontawesome-webfont.ttf */; };
 		97A893251EF62F7400736631 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 97A893221EF62F0F00736631 /* FontAwesome.otf */; };
+		97BB62051F04968700A20A1A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BB62041F04968700A20A1A /* SpriteKit.framework */; };
 		BF6EBD9D060AF4BE55E2E445 /* Pods_ku_blerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B86FFEA8422FFA932F66B94 /* Pods_ku_blerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		972DFCB11EDDCACC00A61EF4 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		97A893211EF62F0F00736631 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 		97A893221EF62F0F00736631 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		97BB62041F04968700A20A1A /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		97D5223F236B35414F611092 /* Pods_ku_blerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ku_blerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF194D793087760D87D1C07F /* Pods-kübler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kübler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kübler/Pods-kübler.debug.xcconfig"; sourceTree = "<group>"; };
 		B69A2ED53469F6970E068B83 /* Pods-küblerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-küblerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-küblerTests/Pods-küblerTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BB62051F04968700A20A1A /* SpriteKit.framework in Frameworks */,
 				2B8289FA7F96CEA777F33BC9 /* Pods_ku_bler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +174,7 @@
 		EB48748AF83233FD9F38CEC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				97BB62041F04968700A20A1A /* SpriteKit.framework */,
 				DCFC816D5DFD2E93213B83F1 /* Pods_ku_bler.framework */,
 				7B86FFEA8422FFA932F66B94 /* Pods_ku_blerTests.framework */,
 				97D5223F236B35414F611092 /* Pods_ku_blerUITests.framework */,
@@ -639,7 +643,7 @@
 				INFOPLIST_FILE = "kübler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "covve.ku-bler";
+				PRODUCT_BUNDLE_IDENTIFIER = covve.kublr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -654,7 +658,7 @@
 				INFOPLIST_FILE = "kübler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "covve.ku-bler";
+				PRODUCT_BUNDLE_IDENTIFIER = covve.kublr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
