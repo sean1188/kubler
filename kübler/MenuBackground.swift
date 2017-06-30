@@ -59,10 +59,11 @@ class mainMenuBG: UIViewController {
 		linebg.alpha = 0;
 		parentHeight = self.view.frame.size.height
 		
-		bg1.addParallaxToView(amt: 25)
-		bg2.addParallaxToView(amt: 10)
-		bg3.addParallaxToView(amt: 35)
+		bg1.addParallaxToView(amt: 35)
+		bg2.addParallaxToView(amt: 15)
+		bg3.addParallaxToView(amt: 45)
 		bg4.addParallaxToView(amt: 5)
+        linebg.addParallaxToView(amt: 20)
 		
 		timerr = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.dotSwitcher), userInfo: nil, repeats: true)
 		

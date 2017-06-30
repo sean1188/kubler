@@ -13,7 +13,7 @@ import SceneKit
 
 class GameVC: UIViewController {
 
-    var gameView :SCNView!
+    @IBOutlet var gameView :SCNView!
     var gameScene:SCNScene!
     var cameraNode:SCNNode!
     var targetCreationTime: TimeInterval = 0
@@ -33,8 +33,7 @@ class GameVC: UIViewController {
     func initCamera() {
         cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
-        
-        cameraNode.position = SCNVector3(x:0, y:5,z:10)
+        cameraNode.position = SCNVector3(x:0, y:5, z:10)
     }
     
     func createTarget(){
